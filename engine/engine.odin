@@ -11,13 +11,18 @@ shutdown :: proc() {
 	raylib.CloseWindow();
 }
 
-update :: proc() {
+run :: proc(update: proc(dt: f32), draw: proc()) {
+	for !raylib.WindowShouldClose() {
+		dt := raylib.GetFrameTime();
 
+		// update logic
+		update(dt);
+
+		// draw logic
+		raylib.BeginDrawing();
+		raylib.ClearBackground(raylib.LIGHTGRAY);
+		draw();
+		raylib.EndDrawing();
+	}
 }
 
-draw :: proc() {
-	raylib.BeginDrawing();
-	raylib.ClearBackground(raylib.LIGHTGRAY);
-
-	raylib.EndDrawing();
-}

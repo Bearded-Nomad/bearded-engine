@@ -55,3 +55,15 @@ Make sure you have Raylib linked or available as a vendor import.
 
 ```bash
 odin run . -file main.odin
+
+You should see a simple window pop up — your first step toward building a tiny Odin-based game engine.
+
+📜 License
+
+This project is open for learning and tinkering.
+You can use it freely, but credit is appreciated.
+
+💬 Author
+
+Maxime Petitpas
+A self-taught developer exploring low-level game development with Odin, Raylib, and curiosity.
