@@ -42,33 +42,6 @@ This **bottom-up** approach keeps things fun, flexible, and realistic.
 
 ---
 
-## 🧱 Project Structure
-
-/engine/
-│
-├── main.odin // Entry point
-│
-├── engine/ // Core systems (no 'core' to avoid name conflict)
-│ ├── engine.odin // Init, update, draw
-│ ├── input.odin // Keyboard/mouse handling
-│ ├── time.odin // Delta time, frame timing
-│ └── camera2d.odin // Simple 2D camera
-│
-├── graphics/
-│ ├── renderer2d.odin // Draw calls, batching
-│ └── sprite.odin // Sprite handling
-│
-├── scene/
-│ ├── entity.odin // Entity base structure
-│ ├── scene.odin // Scene container
-│ └── scene_manager.odin // Scene transitions
-│
-└── examples/
-└── example_game.odin // A small test game using the engine
-
-
----
-
 ## ⚙️ Dependencies
 
 - [Raylib](https://www.raylib.com/) – lightweight C library for windowing, input, rendering, and audio  
